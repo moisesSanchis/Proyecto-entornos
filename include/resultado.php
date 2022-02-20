@@ -32,7 +32,7 @@ function compruebaNombreApellido($dato1, $dato2)
     if (preg_match($patronNombre, trim($dato1)) && preg_match($patronApellido, trim($dato2))) {
         print  "<p class='contenedor'>Nombre y apellidos: $dato1 $dato2</p>";
     } else {
-        print "<p class='error'>No ha escrito su nombre/apellidos incorrectamente.</p>";
+        print "<p class='error'>Ha escrito su nombre/apellidos incorrectamente.</p>";
     }
 }
 
@@ -262,14 +262,36 @@ compruebaValoracion($puntuacion);
 $mensaje = recogeDatos("mensajes");
 
 function compruebaMensaje($dato){
-    if ($dato !=""){
-        print  "
-        <article  class='contenedor'>
-        <p>Tus comentarios:</p>
-        <p>$dato</p></article>";
+    if ($dato!=""){
+        $numeroPalabras=count(explode(" ", $dato));
+        $palabras = preg_split("/[\s,]+/",$dato);
+        mostrarPalabras($palabras, $numeroPalabras);
     }
+
 }
+function mostrarPalabras($dato, $contador){
+
+    print" <p class='contenedor'>Tus comentarios:</p>";
+    for($i = 0; $i < $contador; $i++){
+        if ($i==0){
+            print "<p style='display: inline-block; border: 3px black solid; background-color: rgb(11, 70, 180); color:white; text-align: center;margin-left: 45%'><b> $dato[$i] </b></p></>";
+        }else{
+            print "<p style='display: inline-block; border: 3px black solid; background-color: rgb(11, 70, 180); color:white; text-align: center;margin: 6px;'><b> $dato[$i] </b></p></>";
+
+        }
+
+    }
+    print "<p class='contenedor'>Has escrito $contador palabras.</p>";
+
+}
+
 compruebaMensaje($mensaje);
+
+    $fecha=date('d-m-Y');
+    print"<article  class='contenedor'><p> Fecha: $fecha</p></article>";
+
+
+
 
 ?>
 

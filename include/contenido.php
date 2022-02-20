@@ -1,2 +1,2 @@
 <?php
-print "<p><img alt='' src=\"../imagenes/series.jpg\"></p>";
+print "<p><img alt='No hay imagen' src=\"../imagenes/series.jpg\"></p>";
