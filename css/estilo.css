@@ -1,0 +1,113 @@
+
+#floral{
+    background: url("../imagenes/floral.jpg") no-repeat;
+    background-size: cover;
+}
+#clasico{
+    background: url("../imagenes/clasico.jpg") no-repeat;
+    background-size: cover;
+
+}
+
+#cine{
+    background: url("../imagenes/cine.jpg") no-repeat;
+    background-size: cover;
+
+}
+
+
+header{
+    border: 3px solid black;
+    margin-bottom: 1%;
+    background-color: #DEB887;
+    width: 90%;
+    margin-left: 5%;
+}
+header img{
+    margin-left: 20%;
+}
+article{
+    border: 3px solid black;
+    width: 90%;
+    margin-left: 5%;
+}
+img{
+    width: 900px;
+    height: 200px;
+   margin-left: 30%;
+
+}
+form label{
+    display: flex;
+    margin-top: 2%;
+    margin-bottom: 0.5%;
+}
+form{
+    margin-left: 2%;
+}
+button{
+    margin-bottom: 2%;
+    margin-top: 2%;
+    background-color: #DEB887;
+    height: 40px;
+    border-radius: 8px;
+}
+footer{
+    margin-top: 1%;
+    text-align: center;
+    border: 3px solid black;
+    background-color: #F5DEB3;
+    width: 90%;
+    margin-left: 5%;
+}
+.error{
+    color: red;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 1.6em;
+    text-align: center;
+    border: 3px solid black;
+    margin-bottom: 1%;
+    background-color: #D0D3D4;
+    width: 90%;
+    margin-left: 5%;
+
+}
+.contenedor{
+    text-align: center;
+    border: 3px solid black;
+    margin-bottom: 1%;
+    background-color: #D0D3D4;
+    width: 90%;
+  margin-left: 5%;
+    font-size: 1.6em;
+
+}
+.contenedor img{
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    padding: 1%;
+}
+a{
+   color: black;
+    margin-left: 43%;
+    text-decoration: none;
+    background-color:  #D0D3D4;
+    border-radius: 10px;
+    font-size: 2em;
+
+}
+#valoracion{
+    text-align: center;
+    border: 3px solid black;
+    margin-bottom: 1%;
+    background-color: #D0D3D4;
+    width: 90%;
+    margin-left: 5%;
+}
+#valoracion img{
+  margin-left: 5%;
+    height: 100px;
+    padding: 2%;
+}
